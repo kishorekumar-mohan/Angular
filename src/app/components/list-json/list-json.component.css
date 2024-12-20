@@ -1,0 +1,76 @@
+/* Improved CSS for .container and its children */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 16px;
+  background: linear-gradient(145deg, #f19823, #cb1e1e);
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.6);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #f0f3f6;
+  margin-bottom: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+label {
+  font-size: 1rem;
+  color: #f6eded;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: monospace;
+  line-height: 1.6;
+  background: #f7f7f4;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px rgba(255, 255, 255, 0.8);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  background: #ffffff;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.2), inset -3px -3px 8px rgba(255, 255, 255, 1);
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #2980b9, #1c5a82);
+  transform: translateY(-2px);
+}
+
+pre {
+  background: #f3f4f6;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #dfe2e6;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #555;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1), inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,12 @@
+<div class="main">
+    <div class="head">
+        <div (click)="gotourl('')" [class.selected]="url === '/'"><h1>Outward Remittance</h1></div>
+    </div>
+    <div (click)="gotourl('create')" [class.selected]="url === '/'">Create</div>
+    <div (click)="gotourl('list')" [class.selected]="url === '/list'">List</div>
+    <div (click)="gotourl('detail')" [class.selected]="url === '/detail'">Details</div>
+    <div (click)="gotourl('CreateformjsonComponent')" [class.selected]="url === '/CreateformjsonComponent'">Create form json</div>
+    <div (click)="gotourl('EntityListComponent')" [class.selected]="url === '/EntityListComponent'">List form json</div>
+    <div (click)="gotourl('EntitydetailComponent')" [class.selected]="url === '/EntitydetailComponent'">Details form json</div>
+</div>
+

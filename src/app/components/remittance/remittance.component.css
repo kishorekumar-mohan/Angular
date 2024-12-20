@@ -1,0 +1,41 @@
+body {
+    font-family:TimesNewRoman;
+    background-color: white;
+    margin: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+
+form {
+    width: 300px;
+    padding: 20px;
+    background-color:#ddc92b;
+    border: 1px solid rgb(248, 245, 245);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(247, 243, 243, 0.94);
+    text-align: center;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: drak gray;
+}
+
+form button {
+    background-color: skyblue;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(232, 8, 8);
+}
