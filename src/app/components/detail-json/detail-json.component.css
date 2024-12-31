@@ -1,7 +1,7 @@
 /* Improved CSS for .container and its children */
 .container {
   max-width: 600px;
-  margin: 20px auto;
+  margin: 70px 300px;
   padding: 16px;
   background: linear-gradient(145deg, #f19823, #cb1e1e);
   border-radius: 12px;
@@ -22,7 +22,7 @@ form {
 }
 
 label {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #f6eded;
 }
 
@@ -47,7 +47,7 @@ textarea:focus {
 
 button {
   padding: 12px 18px;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #fff;
   background: linear-gradient(145deg, #3498db, #2980b9);
   border: none;
@@ -65,7 +65,7 @@ button:hover {
 pre {
   background: #f3f4f6;
   padding: 14px;
-  border-radius: 10px;
+  border-radius: 10px; 
   border: 1px solid #dfe2e6;
   font-family: monospace;
   font-size: 0.9rem;
