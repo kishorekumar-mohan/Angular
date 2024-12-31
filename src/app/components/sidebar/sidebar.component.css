@@ -1,31 +1,85 @@
-.main
-{
-    align-items: center;
-    color: rgb(72, 16, 85);
-    font-size: 20px;
-    text-decoration-color: rgb(72, 16, 85);
-    font-weight: 500;
-    height: 100%;
-    justify-content: space-around;
-    background-color: #f8f9fa; /* Light background color */
-    padding: 10px 0;
-    border-bottom: 1px solid #dee2e6;
+body {
+  font-family: Arial, sans-serif;
+  margin:auto;
+  padding: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f4f4f4;
+  height: 100vh;
+  box-sizing: border-box;
+
 }
-.main div{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #343a40; /* Dark text color */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+
+.main {
+  background-color: #d6d1d1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100vh;
 }
-.main div:hover {
-    background-color: #e9ecef; /* Light hover background color */
-    color: #007bff; /* Primary color for hover effect */
+
+details {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fafafa;
 }
-.main div.selected {
-    background-color: #007bff; /* Primary background color for selected item */
-    color: white; /* White text color for selected item */
-    font-weight: bold; /* Bold text for selected item */
+
+details summary {
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  list-style:circle;
+}
+
+details[open] {
+  border-color: #007bff;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 10px;
+  display: none;
+}
+
+details[open] .dropdown-menu {
+  display:contents;
+}
+
+.dropdown-item {
+  margin: 5px 0;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: #020910;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.dropdown-item a:hover {
+  color: #373839;
+}
+
+.dropdown-item a.selected {
+  font-weight: bold;
+  color: #cd1010;
+}
+
+details summary:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    
+  }
 }
