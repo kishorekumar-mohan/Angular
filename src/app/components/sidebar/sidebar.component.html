@@ -1,12 +1,85 @@
-<div class="main">
-    <div class="head">
-        <div (click)="gotourl('')" [class.selected]="url === '/'"><h1>Outward Remittance</h1></div>
+<div class="row-md-3">
+  <div class="col-md-3">
+    <div class="main">
+      <div class="head">
+        <div (click)="setActiveSection('home')" [class.selected]="activeSection === 'home'">
+          <h3>Outward Remittance</h3>
+        </div>
+      </div>
+      <details>
+        <summary>Remittance</summary>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a (click)="setActiveSection('create')" [class.selected]="activeSection === 'create'" routerLink="/create">Create</a>
+          </li>
+          <li class="dropdown-item">
+            <a (click)="setActiveSection('list')" [class.selected]="activeSection === 'list'" routerLink="/list">List</a>
+          </li>
+          <li class="dropdown-item">
+            <a (click)="setActiveSection('detail')" [class.selected]="activeSection === 'detail'" routerLink="/detail">Details</a>
+          </li>
+        </ul>
+      </details>
+      <details>        
+        <summary>Entity</summary>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item">
+            <a routerLink="/CreateformjsonComponent" [class.selected]="activeSection === '/CreateformjsonComponent'">Create form json</a>
+          </li>
+          <li class="dropdown-item">
+            <a routerLink="/EntityListComponent" [class.selected]="activeSection === '/EntityListComponent'">List form json</a>
+          </li>
+          <li class="dropdown-item">
+            <a routerLink="/EntitydetailComponent" [class.selected]="activeSection === '/EntitydetailComponent'">Details form json</a>
+          </li>
+        </ul>
+      </details>
+
     </div>
-    <div (click)="gotourl('create')" [class.selected]="url === '/'">Create</div>
-    <div (click)="gotourl('list')" [class.selected]="url === '/list'">List</div>
-    <div (click)="gotourl('detail')" [class.selected]="url === '/detail'">Details</div>
-    <div (click)="gotourl('CreateformjsonComponent')" [class.selected]="url === '/CreateformjsonComponent'">Create form json</div>
-    <div (click)="gotourl('EntityListComponent')" [class.selected]="url === '/EntityListComponent'">List form json</div>
-    <div (click)="gotourl('EntitydetailComponent')" [class.selected]="url === '/EntitydetailComponent'">Details form json</div>
+  </div>
 </div>
 
+
+  <div class="col-md-9">
+    <router-outlet></router-outlet>
+  </div>
+
+
+
+<div class="">
+
+
+  <!-- <div class="container">
+    <div *ngIf="activeSection === 'home'">
+      <h2>Welcome to Outward Remittance</h2>
+      <p>Select an option to proceed.</p>
+    </div>
+  
+    <div *ngIf="activeSection === 'create'">
+      <app-create-json></app-create-json>
+    </div>
+  
+    <div *ngIf="activeSection === 'list'">
+      <app-list-json></app-list-json>
+    </div>
+  
+    <div *ngIf="activeSection === 'detail'">
+      <app-detail-json></app-detail-json>
+
+    </div>
+  
+    <div *ngIf="activeSection === 'CreateformjsonComponent'">
+      <h2>Create Form JSON</h2>
+      <app-components1></app-components1>
+    </div>
+  
+    <div *ngIf="activeSection === 'EntityListComponent'">
+      <h2>List Form JSON</h2>
+      <app-entity-list></app-entity-list>    </div>
+  
+    <div *ngIf="activeSection === 'EntitydetailComponent'">
+      <h2>Details Form JSON</h2>
+      <app-entitydetail></app-entitydetail>
+    </div>
+  </div> -->
+</div>
